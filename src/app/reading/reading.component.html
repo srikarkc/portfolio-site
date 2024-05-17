@@ -1,0 +1,26 @@
+<div class="reading-container">
+
+    <select [(ngModel)]="selectedGenre" (change)="filterBooks()" class="filter-selector">
+        <option value="All">All Genres</option>
+        <option value="Technical">Technical</option>
+        <option value="Self-Help">Self-Help/Self-Improvement</option>
+        <option value="Fiction">Fiction</option>
+    </select>
+    
+    <select [(ngModel)]="selectedReadStatus" (change)="filterBooks()" class="filter-selector">
+        <option value="All">All Books</option>
+        <option value="Read">Books I've Read</option>
+        <option value="To Read">Books to Read</option>
+    </select>
+    
+    <div class="legend">
+        <h3><div class="legend-item"><span class="color-box-technical"></span>Technical <span class="color-box-Self-Help"></span>Self-Help <span class="color-box-Fiction"></span>Fiction</div></h3>
+    </div>
+
+    <div *ngFor="let book of filteredBooks" class="book-entry" [ngClass]="book.category">
+        <h2>{{ book.title }} ({{ book.category }})</h2>
+        <p>{{ book.author }}</p>
+        <p>{{ book.summary }}</p>
+        <a href="{{ book.link }}" target="_blank" class="read-more-btn">Read More</a>
+    </div>
+</div>

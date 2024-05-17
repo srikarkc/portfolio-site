@@ -1,0 +1,119 @@
+.reading-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.reading-container h1 {
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.book-entry {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.book-entry h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.book-entry p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.genre-selector {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+.filter-selector {
+    align-items: center;
+    margin: auto;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.legend {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.legend h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.legend-item {
+    align-items: auto;
+    margin-bottom: 5px;
+}
+
+.Technical {
+    border-left: 5px solid blue;
+}
+
+.Self-Help {
+    border-left: 5px solid green;
+}
+
+.Fiction {
+    border-left: 5px solid red;
+}
+
+.color-box-technical {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 10%;
+    display: inline-block;
+    background-color: blue;
+}
+
+.color-box-Self-Help {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 10%;
+    display: inline-block;
+    background-color: green;
+}
+
+.color-box-Fiction {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 10%;
+    display: inline-block;
+    background-color: red;
+}
