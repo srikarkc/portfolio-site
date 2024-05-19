@@ -7,7 +7,7 @@ interface Book {
     author: string;
     summary: string;
     link: string;
-    category: string;  // Add a category field to the Book interface
+    category: string;
     readStatus: string; // 'Read' or 'To Read'
 }
 
