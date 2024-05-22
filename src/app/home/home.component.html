@@ -1,11 +1,34 @@
 <div class="home-container">
     <h1>Welcome to Srikar's site!</h1>
-  
-    <a href="https://www.linkedin.com/in/srikar-kc/" class="btn btn-primary">Visit Srikar's LinkedIn</a>
+    <div class="button-container">
+        <a href="https://www.linkedin.com/in/srikar-kc/" class="btn btn-linkedin">LinkedIn</a>
+        <a href="https://github.com/srikarkc/" class="btn btn-github">GitHub</a>
+        <a href="https://kc-tech-96.blogspot.com" class="btn btn-blog">Blog</a>
+    </div>    
+
+    <div class="current-activities">
+        <h2>Working On:</h2>
+        <p *ngFor="let activity of currentActivities">{{ activity.description }}</p>
+    </div>
+
+    <div class="timeline">
+        <h2>Timeline</h2>
+        <div *ngFor="let event of timeline; let i = index" class="container" [ngClass]="{ 'right': isRight(i), 'left': !isRight(i) }">
+            <div *ngIf="isRight(i)" class="image-container">
+                <img [src]="event.image" alt="Image for {{ event.year }}">
+            </div>
+            <div class="content">
+                <h3>{{ event.year }}</h3>
+                <p>{{ event.description }}</p>
+            </div>
+            <div *ngIf="!isRight(i)" class="image-container">
+                <img [src]="event.image" alt="Image for {{ event.year }}">
+            </div>
+        </div>
+    </div>
 
     <footer class="site-footer">
         <p>© 2024 by Srikar. All rights reserved.</p>
         <p>Contact me at <a href="mailto:srikarchinmaya&#64;gmail.com">srikarchinmaya&#64;gmail.com</a></p>
     </footer>
 </div>
-<br />

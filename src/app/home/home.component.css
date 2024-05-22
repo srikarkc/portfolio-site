@@ -4,29 +4,86 @@
   background-color: #f4f4f4;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif; /* Improved font */
 }
 
-.home-container h1 {
-  color: #333;
-  font-size: 2.5rem;
-  padding-bottom: 20px;
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Adds space between the two buttons */
 }
 
-.home-container p {
-  color: #666;
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-
-.btn-primary {
+.btn-linkedin, .btn-github, .btn-blog {
   padding: 10px 20px;
   color: white;
-  background-color: #007bff;
   border: none;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1rem;
-  margin: 20px 0;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn-linkedin {
+  background-color: #007bff;
+}
+
+.btn-github {
+  background-color: #6cc644;
+}
+
+.btn-blog {
+  background-color: #fc4f08;
+}
+
+.btn-linkedin:hover, .btn-github:hover {
+  opacity: 0.9; /* Slight transparency on hover for visual feedback */
+}
+
+
+.current-activities, .timeline {
+  padding: 2%;
+}
+
+.current-activities h2, .timeline h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.container:nth-child(even) {
+  background-color: #eef2f5; /* Lighter background for even entries */
+}
+
+.container:nth-child(odd) {
+  background-color: #d1d8e0; /* Darker background for odd entries */
+}
+
+.image-container {
+  width: 45%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.content {
+  padding: 20px;
+  width: 45%;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
 }
 
 .site-footer {
