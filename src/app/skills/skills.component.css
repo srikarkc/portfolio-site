@@ -1,24 +1,74 @@
-/* Skills Component Styles */
 .skills-container {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-    margin: 20px;
-    text-align: center;
-  }
-  
-  .skills-container h2 {
-    color: #333;
-  }
-  
-  .skills-container ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .skills-container li {
-    padding: 10px;
-    color: #555;
-  }
-  
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-selector {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+}
+
+.skill-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 13em;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.skill-entry.Development { border-left: 5px solid green; }
+.skill-entry.DevOps { border-left: 5px solid blue; }
+.skill-entry.Mechanical { border-left: 5px solid red; }
+
+.star-rating {
+  font-size: 24px;
+}
+
+.filled-star {
+  color: gold;
+}
+
+.empty-star {
+  color: #ccc;
+}
+
+
+.color-box-DevOps {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 10%;
+    display: inline-block;
+    background-color: blue;
+}
+
+.color-box-Development {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 10%;
+    display: inline-block;
+    background-color: green;
+}
+
+.color-box-Mechanical {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 10%;
+    display: inline-block;
+    background-color: red;
+}

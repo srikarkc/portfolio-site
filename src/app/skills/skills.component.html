@@ -1,22 +1,26 @@
-<!-- Skills Component Template -->
 <div class="skills-container">
-    <h2>My Skills</h2>
-    <h4>Core competencies:</h4>
-    <ul>
-      <li>Kubernetes</li>
-      <li>GCP</li>
-      <li>Terraform</li>
-      <li>CI/CD using Jenkins & GitLab CI</li>
-      <li>Linux administration - Ubuntu/RHEL</li>
-      <li>Java</li>
-      <li>Spring Framework</li>
-    </ul>
-    <h4>Others:</h4>
-    <ul>
-      <li>Git</li>
-      <li>JavaScript</li>
-      <li>Angular</li>
-      <li>HTML & CSS</li>
-    </ul>
+  <select [(ngModel)]="selectedCategory" class="filter-selector">
+    <option value="All">All</option>
+    <option value="DevOps">DevOps</option>
+    <option value="Development">Development</option>
+    <option value="Mechanical">Mechanical</option>
+  </select>
+
+  <div class="legend">
+    <h3>
+      <div class="legend-item">
+        <span class="color-box-DevOps"></span>DevOps
+        <span class="color-box-Development"></span>Development
+        <span class="color-box-Mechanical"></span>Mechanical
+      </div>
+    </h3>
   </div>
-  
+
+  <div *ngFor="let skill of filteredSkills" class="skill-entry" [ngClass]="skill.category">
+    <h3>{{ skill.name }}</h3>
+    <div class="star-rating">
+      <span *ngFor="let _ of [].constructor(skill.level)" class="filled-star">★</span>
+      <span *ngFor="let _ of [].constructor(5 - skill.level)" class="empty-star">☆</span>
+    </div>
+  </div>
+</div>

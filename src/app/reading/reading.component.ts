@@ -7,7 +7,7 @@ interface Book {
     author: string;
     summary: string;
     link: string;
-    category: string;
+    category: string; // Technical, Self-Help, or Fiction
     readStatus: string; // 'Read' or 'To Read'
 }
 
@@ -21,36 +21,36 @@ interface Book {
 export class ReadingComponent {
     books: Book[] = [
         {
-            title: 'Deep Learning',
-            author: 'Ian Goodfellow, Yoshua Bengio, Aaron Courville',
-            summary: 'An introduction to a broad range of topics in deep learning, covering mathematical and conceptual background.',
-            link: 'https://www.deeplearningbook.org',
+            title: 'Python Crash Course',
+            author: 'Eric Matthes',
+            summary: 'My favorite Python book since it got me to where I am today.',
+            link: 'https://ehmatthes.github.io/pcc/',
             category: 'Technical',
             readStatus: 'Read'
         },
         {
-            title: 'The 7 Habits of Highly Effective People',
-            author: 'Stephen R. Covey',
-            summary: 'A holistic approach towards personal and professional effectiveness, which is a framework for personal development.',
-            link: 'https://www.example.com/7habits',
+            title: 'Automate the Boring Stuff with Python',
+            author: 'Al Sweigart',
+            summary: 'Another great Python book that has a lot of practical automation examples.',
+            link: 'https://automatetheboringstuff.com',
+            category: 'Technical',
+            readStatus: 'Read'
+        },
+        {
+            title: 'Extreme Ownership',
+            author: 'Jocko Willink & Leif Babin',
+            summary: 'This book defines how one should take ownership of their book and is of great inspiration to me.',
+            link: 'https://www.example.com/ydkjs',
             category: 'Self-Help',
             readStatus: 'Read'
         },
         {
-            title: 'You Don’t Know JS',
-            author: 'Kyle Simpson',
-            summary: 'This book series dives deep into the core mechanisms of JavaScript, helping you to truly understand the language.',
-            link: 'https://www.example.com/ydkjs',
-            category: 'Technical',
-            readStatus: 'To Read'
-        },
-        {
-            title: '1984',
-            author: 'George Orwell',
-            summary: 'A dystopian novel by English novelist George Orwell, presenting a society under omnipresent government surveillance and public manipulation.',
-            link: 'https://www.example.com/1984',
+            title: 'Anxious People',
+            author: 'Fredrik Backman',
+            summary: 'I don\'t generally read fiction but this was recommended by a close friend and it was a brilliant read about judging people & their choices.',
+            link: 'https://www.amazon.ca/Anxious-People-Fredrik-Backman/dp/1501160834',
             category: 'Fiction',
-            readStatus: 'To Read'
+            readStatus: 'Read'
         }
     ];
 
